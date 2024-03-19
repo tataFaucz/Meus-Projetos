@@ -1,0 +1,112 @@
+.btn_grande{
+    size: 80px;
+    border: 1px solid;
+}
+
+.btn_pequeno{
+    size: 15px;
+    border: 1px solid;
+}
+
+.btn_transparente{
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.btn_verde{
+    background-color: rgb(166, 233, 202);
+    border: 1px solid;
+}
+
+.btn_vermelho{
+    background-color: rgb(250, 177, 177);
+    border: 1px solid;
+}
+
+.btn_confirmacao{
+    color: black;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.btn_cancelamento{
+    color: rgb(181, 196, 209);
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.check{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nome{
+    background-color: rgb(216, 166, 216);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+}
+
+.email{
+    background-color: rgb(209, 140, 209);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+}
+
+.senha{
+    background-color: rgb(206, 119, 206);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+}
+
+.range{
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 15px; 
+    background: #c765c7;
+    cursor: pointer;
+}
+
+.label{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+}
+
+.paragrafo{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cabecalho{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.claro{
+    color: azure;
+}
+
+.escuro{
+    color: rgb(43, 41, 41);
+}
+
+.link{
+    color: #e69fbc;
+    text-decoration: none;
+}
+
+.fundo_claro{
+    background-color: #ddaef0;
+}
+
+.fundo_escuro{
+    background-color: #bc48eb;
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+}
