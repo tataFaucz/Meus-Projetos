@@ -1,0 +1,105 @@
+.btn_grande{
+    size: 80px;
+    border: 1px solid;
+}
+
+.btn_pequeno{
+    size: 15px; 
+    border: 1px solid;
+}
+
+.btn_transparente{
+    background-color: transparent;
+    border: 1px solid;
+}
+
+.btn_verde{
+    background-color: rgb(72, 189, 134);
+    border: 1px solid;
+}
+
+.btn_vermelho{
+    background-color: rgb(207, 118, 118);
+    border: 1px solid;
+}
+
+.btn_confirmacao{
+    color: black;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.btn_cancelamento{
+    color: rgb(181, 196, 209);
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.check{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text_sentence{
+    background-color:transparent;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+}
+
+.range{
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 15px; 
+    background-color: rgb(255, 230, 91);
+    cursor: pointer;
+}
+
+.label{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: antiquewhite;
+}
+
+.paragrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.cabecalho{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    color: rgb(255, 230, 91);
+}
+
+.claro{
+    color: rgb(231, 225, 188);
+}
+
+.escuro{
+    color: rgba(44, 43, 34, 0.568);
+}
+
+.link{
+    color: #f7f090;
+    text-decoration: none;
+}
+
+.fundo_claro{
+    background-color: #ddaef0;
+}
+
+.fundo_escuro{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 28%, rgba(0,212,255,1) 100%);
+}
+
+.body{
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
