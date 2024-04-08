@@ -9,8 +9,8 @@ body{
 #board{
     width: 450px;
     height: 450px;
+    opacity: 90%;
     background-color: rgb(207, 160, 71);
-    opacity: 50%;
     border: 5px solid rgb(187, 121, 0);
     border-radius: 10px;
     margin: auto;
