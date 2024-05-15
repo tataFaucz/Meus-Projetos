@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakfu - Configurações</title>
+</head>
+<body>
+    <h1>Configurações do Jogo</h1>
+
+    <!-- CRUD -->
+    <div id="crud">
+        <input type="text" id="inputName" placeholder="Nome do Jogador">
+        <button onclick="createPlayer()">Adicionar Jogador</button>
+
+        <ul id="playerList"></ul>
+
+        <button onclick="editPlayer()">Editar Jogador Selecionado</button>
+        <button onclick="deletePlayer()">Excluir Jogador Selecionado</button>
+
+        <button onclick="startGame()">Jogar</button>
+    </div>
+
+    <!-- Jogo (oculto por padrão) -->
+    <div id="game" style="display: none;">
+        <h2>Jogador Selecionado:</h2>
+        <p id="selectedPlayer"></p>
+        <!-- Conteúdo do jogo aqui -->
+    </div>
+
+    <script>
+        let players = [];
+        let selectedPlayerIndex = -1;
+
+        function createPlayer() {
+            const playerName = document.getElementById("inputName").value;
+            if (playerName.trim() !== "") {
+                players.push(playerName);
+                updatePlayerList();
+                document.getElementById("inputName").value = "";
+            }
+        }
+
+        function updatePlayerList() {
+            const playerList = document.getElementById("playerList");
+            playerList.innerHTML = "";
+            players.forEach((player, index) => {
+                const li = document.createElement("li");
+                li.textContent = player;
+                li.onclick = () => selectPlayer(index);
+                playerList.appendChild(li);
+            });
+        }
+
+        function selectPlayer(index) {
+            selectedPlayerIndex = index;
+            const selectedPlayer = players[selectedPlayerIndex];
+            document.getElementById("selectedPlayer").textContent = selectedPlayer;
+        }
+
+        function editPlayer() {
+            if (selectedPlayerIndex !== -1) {
+                const newName = prompt("Digite o novo nome do jogador:");
+                if (newName !== null && newName.trim() !== "") {
+                    players[selectedPlayerIndex] = newName;
+                    updatePlayerList();
+                }
+            }
+        }
+
+        function deletePlayer() {
+            if (selectedPlayerIndex !== -1) {
+                const confirmDelete = confirm("Tem certeza que deseja excluir este jogador?");
+                if (confirmDelete) {
+                    players.splice(selectedPlayerIndex, 1);
+                    selectedPlayerIndex = -1;
+                    updatePlayerList();
+                    document.getElementById("selectedPlayer").textContent = "";
+                }
+            }
+        }
+
+        function startGame() {
+            if (selectedPlayerIndex !== -1) {
+                // Esconda o CRUD e mostre o jogo
+                document.getElementById("crud").style.display = "none";
+                document.getElementById("game").style.display = "block";
+                // Inicie o jogo aqui
+                // Por exemplo: startGameLogic(selectedPlayerIndex);
+            } else {
+                alert("Selecione um jogador antes de jogar!");
+            }
+        }
+    </script>
+</body>
+</html>
+
