@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakfu</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="crud">
+        <h2>Jogadores</h2>
+        <input type="text" id="inputName" placeholder="Nome do Jogador">
+        <button onclick="createPlayer()" class="confirm">Adicionar Jogador</button>
+        <ul id="playerList"></ul>
+        <h3>Jogador Selecionado: <span id="selectedPlayer"></span></h3>
+        <button onclick="startGame()" class="button play">Jogar</button><br>
+        <button onclick="editPlayer()" class="button transparent">Editar Jogador</button><br>
+        <button onclick="deletePlayer()" class="button transparent">Excluir Jogador</button>
+    </div>
+
+    <div id="game" style="display: none;">
+        <h1>Score: <span id="score">0</span></h1>
+        <h3 id="timer">Tempo Restante: 180 segundos</h3>
+        <div id="board"></div>
+    </div>
+
+    <script src="estilo.js"></script>
+</body>
+</html>

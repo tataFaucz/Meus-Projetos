@@ -1,0 +1,47 @@
+body{
+    background: url(imagem/background.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+#board{
+    width: 450px;
+    height: 450px;
+    opacity: 90%;
+    background-color: rgb(207, 160, 71);
+    border: 5px solid rgb(187, 121, 0);
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board img{
+    width: 50px;
+    height: 50px;
+}
+
+.button{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 5px
+}
+
+.transparent{
+    background-color: transparent;
+    color: aliceblue;
+}
+
+
+.confirm{
+    background-color: rgb(157, 235, 187);
+}
+
+.play{
+    background-color: rgba(40, 163, 51, 0.795);
+    color: aliceblue;
+}
