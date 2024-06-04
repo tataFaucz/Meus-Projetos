@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moranguinho Game</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div id="crud">
+        <h2>Jogador(es)</h2>
+        <input type="text" id="inputName" placeholder="Nome do Jogador"><br>
+        <input type="text" id="inputNationality" placeholder="Nacionalidade"><br>
+        <input type="number" id="inputAge" placeholder="Idade"><br>
+        <input type="email" id="inputEmail" placeholder="E-mail"><br>
+        <button onclick="createPlayer()" class="confirm">Adicionar Jogador</button>
+        <ul id="playerList"></ul>
+        <h3>Jogador Selecionado: <span id="selectedPlayer"></span></h3>
+        <button onclick="startGame()" class="button play">Jogar</button><br>
+        <button onclick="editPlayer()" class="button editar">Editar Jogador</button><br>
+        <button onclick="deletePlayer()" class="button excluir">Excluir Jogador</button>
+        <div class="caracther">
+            <img src="imagem/carac.webp">
+        </div>
+    </div>
+
+    <div id="game" style="display: none;">
+        <h1>Score: <span id="score">0</span></h1>
+        <h3 id="timer">Tempo Restante: 180 segundos</h3>
+        <div id="board"></div>
+    </div>
+
+    <script src="estilo.js"></script>
+</body>
+</html>
